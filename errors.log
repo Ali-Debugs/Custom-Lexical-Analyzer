@@ -1,0 +1,32 @@
+===============================================
+  ERROR LOG
+  Ali's Lexical Analyzer
+===============================================
+
+Line 53, ERROR -> 5abc (Invalid token)
+Line 54, ERROR -> my_var (Invalid token)
+Line 55, ERROR -> te@st (Invalid token)
+Line 56, ERROR -> -.5 (Invalid token)
+Line 57, ERROR -> 5. (Invalid token)
+Line 58, ERROR -> #incomplete (Invalid token)
+Line 59, ERROR -> "unterminated string (Invalid token)
+Line 59: WARNING -> Unterminated string literal
+Line 60, ERROR -> 'x (Invalid token)
+Line 60: WARNING -> Unterminated character literal
+Line 61: ERROR -> Unterminated multi-line comment
+
+===============================================
+  ERROR SUMMARY
+===============================================
+Total errors found: 9
+===============================================
+
+Common causes:
+  - Invalid characters (@, #, ~, `)
+  - Special characters in middle of identifiers
+  - Digit-prefixed identifiers
+  - Underscores in identifiers
+  - Bad number formats (.5, 5., 5e)
+  - Unclosed strings/chars
+  - Unclosed comments
+  - Unknown symbols

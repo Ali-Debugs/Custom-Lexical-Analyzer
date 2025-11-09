@@ -1,0 +1,61 @@
+house wizardacademy {
+    numspell score $
+    textspell wizardname $
+    floatspell power $
+}
+
+voidcharm beginmagic () {
+    numspell magicpoints = 100 $
+    floatspell spellpower = 85.5 $
+    textspell message = "Welcome to Hogwarts" $
+    truthcharm ismagical = 1 $
+    
+    reveal message $
+    
+    ifcharm (spellpower > 50.0) {
+        reveal "Powerful wizard detected" $
+        magicpoints #+ $
+    } elsecharm {
+        reveal "More training needed" $
+    }
+    
+    numspell count #= 0 $
+    loopcharm ( count < 5 ) {
+        reveal "Casting spell number: " $
+        reveal count $
+        count #+ $
+        
+        ifcharm ( count #= 3 ) {
+            skipcurse $
+        }
+    }
+    
+    // Spell cycle practice
+    spellcycle ( numspell i = 0 $ i <= 10 $ i #+ ) {
+        ifcharm ( i #= 7 ) {
+            breakcurse $
+        }
+        spellpower = spellpower * 1.5 $
+    }
+    
+    numspell finalpower = magicpoints + 50 $
+    reveal "Final magical power: " $
+    reveal finalpower $
+
+    
+    returncharm 0 $
+}
+
+floatspell i = -50.9 $
+floatspell z = -10.2e10 $
+
+// these should fail:
+5abc
+my_var
+te@st
+-.5
+5.
+#incomplete
+"unterminated string
+'x
+/* unclosed comment

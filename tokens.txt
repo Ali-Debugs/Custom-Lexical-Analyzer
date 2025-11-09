@@ -1,0 +1,173 @@
+===============================================
+  Ali'S LEXICAL ANALYZER
+  Tokenization Output
+===============================================
+
+Line 1: KEYWORD -> house
+Line 1: IDENTIFIER -> wizardacademy
+Line 1: PUNCTUATOR -> {
+Line 2: KEYWORD -> numspell
+Line 2: IDENTIFIER -> score
+Line 2: PUNCTUATOR -> $
+Line 3: KEYWORD -> textspell
+Line 3: IDENTIFIER -> wizardname
+Line 3: PUNCTUATOR -> $
+Line 4: KEYWORD -> floatspell
+Line 4: IDENTIFIER -> power
+Line 4: PUNCTUATOR -> $
+Line 5: PUNCTUATOR -> }
+Line 7: KEYWORD -> voidcharm
+Line 7: KEYWORD -> beginmagic
+Line 7: PUNCTUATOR -> (
+Line 7: PUNCTUATOR -> )
+Line 7: PUNCTUATOR -> {
+Line 8: KEYWORD -> numspell
+Line 8: IDENTIFIER -> magicpoints
+Line 8: OPERATOR -> =
+Line 8: NUMBER_INT -> 100
+Line 8: PUNCTUATOR -> $
+Line 9: KEYWORD -> floatspell
+Line 9: IDENTIFIER -> spellpower
+Line 9: OPERATOR -> =
+Line 9: NUMBER_FLOAT -> 85.5
+Line 9: PUNCTUATOR -> $
+Line 10: KEYWORD -> textspell
+Line 10: IDENTIFIER -> message
+Line 10: OPERATOR -> =
+Line 10: STRING_LITERAL -> "Welcome to Hogwarts"
+Line 10: PUNCTUATOR -> $
+Line 11: KEYWORD -> truthcharm
+Line 11: IDENTIFIER -> ismagical
+Line 11: OPERATOR -> =
+Line 11: NUMBER_INT -> 1
+Line 11: PUNCTUATOR -> $
+Line 13: KEYWORD -> reveal
+Line 13: IDENTIFIER -> message
+Line 13: PUNCTUATOR -> $
+Line 15: KEYWORD -> ifcharm
+Line 15: PUNCTUATOR -> (
+Line 15: IDENTIFIER -> spellpower
+Line 15: OPERATOR -> >
+Line 15: NUMBER_FLOAT -> 50.0
+Line 15: PUNCTUATOR -> )
+Line 15: PUNCTUATOR -> {
+Line 16: KEYWORD -> reveal
+Line 16: STRING_LITERAL -> "Powerful wizard detected"
+Line 16: PUNCTUATOR -> $
+Line 17: IDENTIFIER -> magicpoints
+Line 17: OPERATOR -> #+
+Line 17: PUNCTUATOR -> $
+Line 18: PUNCTUATOR -> }
+Line 18: KEYWORD -> elsecharm
+Line 18: PUNCTUATOR -> {
+Line 19: KEYWORD -> reveal
+Line 19: STRING_LITERAL -> "More training needed"
+Line 19: PUNCTUATOR -> $
+Line 20: PUNCTUATOR -> }
+Line 22: KEYWORD -> numspell
+Line 22: IDENTIFIER -> count
+Line 22: OPERATOR -> #=
+Line 22: NUMBER_INT -> 0
+Line 22: PUNCTUATOR -> $
+Line 23: KEYWORD -> loopcharm
+Line 23: PUNCTUATOR -> (
+Line 23: IDENTIFIER -> count
+Line 23: OPERATOR -> <
+Line 23: NUMBER_INT -> 5
+Line 23: PUNCTUATOR -> )
+Line 23: PUNCTUATOR -> {
+Line 24: KEYWORD -> reveal
+Line 24: STRING_LITERAL -> "Casting spell number: "
+Line 24: PUNCTUATOR -> $
+Line 25: KEYWORD -> reveal
+Line 25: IDENTIFIER -> count
+Line 25: PUNCTUATOR -> $
+Line 26: IDENTIFIER -> count
+Line 26: OPERATOR -> #+
+Line 26: PUNCTUATOR -> $
+Line 28: KEYWORD -> ifcharm
+Line 28: PUNCTUATOR -> (
+Line 28: IDENTIFIER -> count
+Line 28: OPERATOR -> #=
+Line 28: NUMBER_INT -> 3
+Line 28: PUNCTUATOR -> )
+Line 28: PUNCTUATOR -> {
+Line 29: KEYWORD -> skipcurse
+Line 29: PUNCTUATOR -> $
+Line 30: PUNCTUATOR -> }
+Line 31: PUNCTUATOR -> }
+Line 34: KEYWORD -> spellcycle
+Line 34: PUNCTUATOR -> (
+Line 34: KEYWORD -> numspell
+Line 34: IDENTIFIER -> i
+Line 34: OPERATOR -> =
+Line 34: NUMBER_INT -> 0
+Line 34: PUNCTUATOR -> $
+Line 34: IDENTIFIER -> i
+Line 34: OPERATOR -> <=
+Line 34: NUMBER_INT -> 10
+Line 34: PUNCTUATOR -> $
+Line 34: IDENTIFIER -> i
+Line 34: OPERATOR -> #+
+Line 34: PUNCTUATOR -> )
+Line 34: PUNCTUATOR -> {
+Line 35: KEYWORD -> ifcharm
+Line 35: PUNCTUATOR -> (
+Line 35: IDENTIFIER -> i
+Line 35: OPERATOR -> #=
+Line 35: NUMBER_INT -> 7
+Line 35: PUNCTUATOR -> )
+Line 35: PUNCTUATOR -> {
+Line 36: KEYWORD -> breakcurse
+Line 36: PUNCTUATOR -> $
+Line 37: PUNCTUATOR -> }
+Line 38: IDENTIFIER -> spellpower
+Line 38: OPERATOR -> =
+Line 38: IDENTIFIER -> spellpower
+Line 38: OPERATOR -> *
+Line 38: NUMBER_FLOAT -> 1.5
+Line 38: PUNCTUATOR -> $
+Line 39: PUNCTUATOR -> }
+Line 41: KEYWORD -> numspell
+Line 41: IDENTIFIER -> finalpower
+Line 41: OPERATOR -> =
+Line 41: IDENTIFIER -> magicpoints
+Line 41: OPERATOR -> +
+Line 41: NUMBER_INT -> 50
+Line 41: PUNCTUATOR -> $
+Line 42: KEYWORD -> reveal
+Line 42: STRING_LITERAL -> "Final magical power: "
+Line 42: PUNCTUATOR -> $
+Line 43: KEYWORD -> reveal
+Line 43: IDENTIFIER -> finalpower
+Line 43: PUNCTUATOR -> $
+Line 46: KEYWORD -> returncharm
+Line 46: NUMBER_INT -> 0
+Line 46: PUNCTUATOR -> $
+Line 47: PUNCTUATOR -> }
+Line 49: KEYWORD -> floatspell
+Line 49: IDENTIFIER -> i
+Line 49: OPERATOR -> =
+Line 49: NUMBER_FLOAT -> -50.9
+Line 49: PUNCTUATOR -> $
+Line 50: KEYWORD -> floatspell
+Line 50: IDENTIFIER -> z
+Line 50: OPERATOR -> =
+Line 50: NUMBER_EXP -> -10.2e10
+Line 50: PUNCTUATOR -> $
+Line 53: ERROR -> 5abc
+Line 54: ERROR -> my_var
+Line 55: ERROR -> te@st
+Line 56: ERROR -> -.5
+Line 57: ERROR -> 5.
+Line 58: ERROR -> #incomplete
+Line 59: ERROR -> "unterminated string
+Line 60: ERROR -> 'x
+
+===============================================
+  TOKENIZATION SUMMARY
+===============================================
+Total lines processed: 62
+Total tokens recognized: 152
+Total errors found: 9
+===============================================
